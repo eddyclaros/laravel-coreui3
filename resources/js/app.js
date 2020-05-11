@@ -20,6 +20,10 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('menu1', require('./components/Menu1.vue').default);
+Vue.component('menu2', require('./components/Menu2.vue').default);
+Vue.component('menu3', require('./components/Menu3.vue').default);
+Vue.component('menu4', require('./components/Menu4.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +33,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    data:{
+        menu:0
+    }
 });

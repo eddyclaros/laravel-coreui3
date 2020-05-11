@@ -51,7 +51,11 @@
     </script>
   </head>
   <body class="c-app">
+  <div id="app">
+    
     @include('plantilla.sidebar')
+
+    
     <div class="c-wrapper c-fixed-components">
       <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
         <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
@@ -136,11 +140,13 @@
         </div>
       </header>
       <div class="c-body">
+      @yield('contenido')
         <main class="c-main">
           <div class="container-fluid">
             <div class="fade-in"></div>
           </div>
         </main>
+  </div>
         <footer class="c-footer">
           <div><a href="https://coreui.io">CoreUI</a> © 2020 creativeLabs.</div>
           <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
@@ -152,6 +158,8 @@
     <!--[if IE]><!-->
     <script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
     <!--<![endif]-->
+    <script src="js/app.js"></script>
+    {{-- <script src="js/plantilla.js"></script> --}}
 
 
   </body>
