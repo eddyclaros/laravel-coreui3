@@ -1,4 +1,4 @@
-##integracion Laravel 7  + Coreui3
+## integracion Laravel 7  + Coreui3
 proyecto de inicio funcional
-##instalacion
+## instalacion
 descargar el proyecto y ejecutar npm install
